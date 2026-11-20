@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/0W/QJEesUmK/5Tg4nHbjRkjpj9k</id>
+  <title>arXiv Query: search_query=abs:"state of health" AND abs:battery AND (abs:estimation OR abs:prediction)&amp;id_list=&amp;start=0&amp;max_results=50</title>
+  <updated>2026-11-20T02:32:09Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:%22state+of+health%22+AND+(abs:battery+AND+(abs:estimation+OR+abs:prediction))&amp;start=0&amp;max_results=50&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>50</opensearch:itemsPerPage>
+  <opensearch:totalResults>129</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/1903.07672v2</id>
+    <title>State of health estimation for lithium-ion battery by combining incremental capacity analysis with Gaussian process regression</title>
+    <updated>2019-03-31T12:32:27Z</updated>
+    <link href="https://arxiv.org/abs/1903.07672v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1903.07672v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The state of health for lithium battery is necessary to ensure the reliability and safety for battery energy storage system. Accurate prediction battery state of health plays an extremely important role in guaranteeing safety and minimizing the maintenance costs. However, the complex physicochemical characteristics of battery degradation cannot be obtained directly. Here a novel Gaussian process regression model based on partial incremental capacity curve is proposed. First, an advanced Gaussian filter method is applied to obtain the smoothing incremental capacity curves. The health indexes are then extracted from the partial incremental capacity curves as the input features of the proposed model. Otherwise, the mean and the covariance function of the proposed method are applied to predict battery state of health and the model uncertainty, respectively. Four aging datasets from NASA data repository are employed for demonstrating the predictive capability and efficacy of the degradation model using the proposed method. Besides, different initial health conditions of the tested batteries are used to verify the robustness and reliability of the proposed method. Results show that the proposed method can provide accurate and robust state of health estimation.</summary>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-03-15T03:29:14Z</published>
+    <arxiv:primary_category term="eess.SP"/>
+    <author>
+      <name>Xiaoyu Li</name>
+    </author>
+    <author>
+      <name>Zhenpo Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.16980v1</id>
+    <title>Electrode SOC and SOH estimation with electrode-level ECMs</title>
+    <updated>2024-10-22T12:59:54Z</updated>
+    <link href="https://arxiv.org/abs/2410.16980v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.16980v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Being able to predict battery internal states that are related to battery degradation is a key aspect to improve battery lifetime and performance, enhancing cleaner electric transportation and energy generation. However, most present battery management systems (BMSs) use equivalent-circuit models (ECMs) for state of charge (SOC) and state of health (SOH) estimation. These models are not able to predict these aging-related variables, and therefore, they cannot be used to limit battery degradation. In this paper, we propose a method for electrode-level SOC (eSOC) and electrode-level SOH (eSOH) estimation using an electrode-level ECM (eECM). The method can produce estimates of the states of lithiation (SOL) of both electrodes and update the eSOH parameters to maintain estimation accuracy through the lifetime of the battery. Furthermore, the eSOH parameter estimates are used to obtain degradation mode information, which could be used to improve state estimation, health diagnosis and prognosis. The method was validated in simulation and experimentally.</summary>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-22T12:59:54Z</published>
+    <arxiv:primary_category term="eess.SY"/>
+    <author>
+      <name>Iker Lopetegi</name>
+    </author>
+    <author>
+      <name>Sergio Fernandez</name>
+    </author>
+    <author>
+      <name>Gregory L. Plett</name>
+    </author>
+    <author>
+      <name>M. Scott Trimboli</name>
+    </author>
+    <author>
+      <name>Unai Iraola</name>
+    </author>
+    <arxiv:doi>10.1149/1945-7111/ade297</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1149/1945-7111/ade297" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2409.14575v1</id>
+    <title>Domain knowledge-guided machine learning framework for state of health estimation in Lithium-ion batteries</title>
+    <updated>2024-09-22T19:39:53Z</updated>
+    <link href="https://arxiv.org/abs/2409.14575v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.14575v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Accurate estimation of battery state of health is crucial for effective electric vehicle battery management. Here, we propose five health indicators that can be extracted online from real-world electric vehicle operation and develop a machine learning-based method to estimate the battery state of health. The proposed indicators provide physical insights into the energy and power fade of the battery and enable accurate capacity estimation even with partially missing data. Moreover, they can be computed for portions of the charging profile and real-world driving discharging conditions, facilitating real-time battery degradation estimation. The indicators are computed using experimental data from five cells aged under electric vehicle conditions, and a linear regression model is used to estimate the state of health. The results show that models trained with power autocorrelation and energy-based features achieve capacity estimation with maximum absolute percentage error within 1.5% to 2.5% .</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-22T19:39:53Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Andrea Lanubile</name>
+    </author>
+    <author>
+      <name>Pietro Bosoni</name>
+    </author>
+    <author>
+      <name>Gabriele Pozzato</name>
+    </author>
+    <author>
+      <name>Anirudh Allam</name>
+    </author>
+    <author>
+      <name>Matteo Acquarone</name>
+    </author>
+    <author>
+      <name>Simona Onori</name>
+    </author>
+  </entry>
+</feed>

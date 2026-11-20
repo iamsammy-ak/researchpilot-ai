@@ -1,0 +1,17 @@
+[project]
+name = "researchpilot-ai"
+version = "0.1.0"
+description = "Research assistant: arXiv/PDF/CSV ingestion, BM25 evidence retrieval, literature maps, dataset statistics and citation grounding checks."
+requires-python = ">=3.10"
+license = "MIT"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

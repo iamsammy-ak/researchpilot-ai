@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "rag-evaluation",
+    "name": "RAG evaluation",
+    "corpus": "rag-evaluation",
+    "question": "How are retrieval-augmented generation systems evaluated, and where do current benchmarks fall short?",
+    "qa_questions": [
+      "Which abilities does the RGB benchmark test?",
+      "How are hallucinations in RAG answers detected automatically?",
+      "Does chunk size change RAG performance?"
+    ],
+    "grounding_example": "RGB evaluates large language models on four abilities needed for RAG: noise robustness, negative rejection, information integration and counterfactual robustness [S1]. The evaluated models show some noise robustness but struggle with negative rejection and information integration [S1]. Reference-free evaluation models such as Lynx and HHEM catch incorrect RAG responses without ground-truth answers [S31]. HaluBench contains 15k samples sourced from real-world domains [S31]. Current RAG benchmarks are compared on metrics such as relevance, accuracy and faithfulness [S15].\n\nCluster-based semantic chunking outperformed fixed-size and recursive chunking on long academic theses [S16]. Larger chunks reduce retrieval precision by 40% compared with sentence-level chunks [S44]. Most production RAG systems are now evaluated by human raters alone [S15]. Agentic RAG pipelines are scored on tool-use traces [S77]. Evaluation practice for RAG is still far from standardised across the field."
+  },
+  {
+    "slug": "battery-soh",
+    "name": "Battery state of health",
+    "corpus": "battery-soh",
+    "question": "Which data-driven methods are used to estimate lithium-ion battery state of health, and what data do they rely on?",
+    "qa_questions": [
+      "Which features are extracted from charging curves to estimate state of health?",
+      "How do physics-informed models compare with purely data-driven ones?",
+      "Which public datasets are used to train state-of-health models?"
+    ],
+    "grounding_example": "A Gaussian process regression model built on partial incremental capacity curves predicts battery state of health and its uncertainty [S1]. It was demonstrated on four ageing datasets from the NASA data repository [S1]. A physics-informed Gaussian process regression model predicted state of health with errors below 1.1% using 10 to 20 minutes of relaxation data [S20]. One machine learning pipeline engineers 30 features from segments of charge voltage and current curves [S16]. Current capacity estimation methods fail to account for long-term temporal dependencies of voltage, current and temperature [S5].\n\nPhysics-informed parameters improved state-of-health estimation accuracy by 75% [S26]. SambaMixer was evaluated on 464 retired lithium-ion batteries covering 3 cathode material types [S8]. The pipeline methodology cannot be generalized to other critical components that require real-time estimation of state of health [S16]. Transformer models have replaced Gaussian processes as the standard approach in production battery management systems [S5]. Sodium-ion cells show slower capacity fade than lithium-ion cells [S72]. Field data from electric vehicles is still scarce compared with laboratory cycling data."
+  }
+]

@@ -1,0 +1,958 @@
+{
+ "slug": "battery-soh",
+ "name": "Battery state-of-health estimation",
+ "query": "abs:\"state of health\" AND abs:battery AND (abs:estimation OR abs:prediction)",
+ "fetched_at": "2026-11-20",
+ "source": "arXiv API",
+ "license": "arXiv metadata, CC0 1.0",
+ "synthetic": false,
+ "papers": [
+  {
+   "arxiv_id": "1903.07672",
+   "title": "State of health estimation for lithium-ion battery by combining incremental capacity analysis with Gaussian process regression",
+   "authors": [
+    "Xiaoyu Li",
+    "Zhenpo Wang"
+   ],
+   "published": "2019-03-15",
+   "updated": "2019-03-31",
+   "categories": [
+    "eess.SP"
+   ],
+   "abstract": "The state of health for lithium battery is necessary to ensure the reliability and safety for battery energy storage system. Accurate prediction battery state of health plays an extremely important role in guaranteeing safety and minimizing the maintenance costs. However, the complex physicochemical characteristics of battery degradation cannot be obtained directly. Here a novel Gaussian process regression model based on partial incremental capacity curve is proposed. First, an advanced Gaussian filter method is applied to obtain the smoothing incremental capacity curves. The health indexes are then extracted from the partial incremental capacity curves as the input features of the proposed model. Otherwise, the mean and the covariance function of the proposed method are applied to predict battery state of health and the model uncertainty, respectively. Four aging datasets from NASA data repository are employed for demonstrating the predictive capability and efficacy of the degradation model using the proposed method. Besides, different initial health conditions of the tested batteries are used to verify the robustness and reliability of the proposed method. Results show that the proposed method can provide accurate and robust state of health estimation.",
+   "url": "https://arxiv.org/abs/1903.07672v2",
+   "pdf_url": "https://arxiv.org/pdf/1903.07672v2"
+  },
+  {
+   "arxiv_id": "2410.16980",
+   "title": "Electrode SOC and SOH estimation with electrode-level ECMs",
+   "authors": [
+    "Iker Lopetegi",
+    "Sergio Fernandez",
+    "Gregory L. Plett",
+    "M. Scott Trimboli",
+    "Unai Iraola"
+   ],
+   "published": "2024-10-22",
+   "updated": "2024-10-22",
+   "categories": [
+    "eess.SY"
+   ],
+   "abstract": "Being able to predict battery internal states that are related to battery degradation is a key aspect to improve battery lifetime and performance, enhancing cleaner electric transportation and energy generation. However, most present battery management systems (BMSs) use equivalent-circuit models (ECMs) for state of charge (SOC) and state of health (SOH) estimation. These models are not able to predict these aging-related variables, and therefore, they cannot be used to limit battery degradation. In this paper, we propose a method for electrode-level SOC (eSOC) and electrode-level SOH (eSOH) estimation using an electrode-level ECM (eECM). The method can produce estimates of the states of lithiation (SOL) of both electrodes and update the eSOH parameters to maintain estimation accuracy through the lifetime of the battery. Furthermore, the eSOH parameter estimates are used to obtain degradation mode information, which could be used to improve state estimation, health diagnosis and prognosis. The method was validated in simulation and experimentally.",
+   "url": "https://arxiv.org/abs/2410.16980v1",
+   "pdf_url": "https://arxiv.org/pdf/2410.16980v1"
+  },
+  {
+   "arxiv_id": "2409.14575",
+   "title": "Domain knowledge-guided machine learning framework for state of health estimation in Lithium-ion batteries",
+   "authors": [
+    "Andrea Lanubile",
+    "Pietro Bosoni",
+    "Gabriele Pozzato",
+    "Anirudh Allam",
+    "Matteo Acquarone",
+    "Simona Onori"
+   ],
+   "published": "2024-09-22",
+   "updated": "2024-09-22",
+   "categories": [
+    "cs.LG",
+    "eess.SY"
+   ],
+   "abstract": "Accurate estimation of battery state of health is crucial for effective electric vehicle battery management. Here, we propose five health indicators that can be extracted online from real-world electric vehicle operation and develop a machine learning-based method to estimate the battery state of health. The proposed indicators provide physical insights into the energy and power fade of the battery and enable accurate capacity estimation even with partially missing data. Moreover, they can be computed for portions of the charging profile and real-world driving discharging conditions, facilitating real-time battery degradation estimation. The indicators are computed using experimental data from five cells aged under electric vehicle conditions, and a linear regression model is used to estimate the state of health. The results show that models trained with power autocorrelation and energy-based features achieve capacity estimation with maximum absolute percentage error within 1.5% to 2.5% .",
+   "url": "https://arxiv.org/abs/2409.14575v1",
+   "pdf_url": "https://arxiv.org/pdf/2409.14575v1"
+  },
+  {
+   "arxiv_id": "2212.01609",
+   "title": "Enhanced Gaussian Process Dynamical Models with Knowledge Transfer for Long-term Battery Degradation Forecasting",
+   "authors": [
+    "Wei W. Xing",
+    "Ziyang Zhang",
+    "Akeel A. Shah"
+   ],
+   "published": "2022-12-03",
+   "updated": "2023-06-02",
+   "categories": [
+    "cs.LG"
+   ],
+   "abstract": "Predicting the end-of-life or remaining useful life of batteries in electric vehicles is a critical and challenging problem, predominantly approached in recent years using machine learning to predict the evolution of the state-of-health during repeated cycling. To improve the accuracy of predictive estimates, especially early in the battery lifetime, a number of algorithms have incorporated features that are available from data collected by battery management systems. Unless multiple battery data sets are used for a direct prediction of the end-of-life, which is useful for ball-park estimates, such an approach is infeasible since the features are not known for future cycles. In this paper, we develop a highly-accurate method that can overcome this limitation, by using a modified Gaussian process dynamical model (GPDM). We introduce a kernelised version of GPDM for a more expressive covariance structure between both the observable and latent coordinates. We combine the approach with transfer learning to track the future state-of-health up to end-of-life. The method can incorporate features as different physical observables, without requiring their values beyond the time up to which data is available. Transfer learning is used to improve learning of the hyperparameters using data from similar batteries. The accuracy and superiority of the approach over modern benchmarks algorithms including a Gaussian process model and deep convolutional and recurrent networks are demonstrated on three data sets, particularly at the early stages of the battery lifetime.",
+   "url": "https://arxiv.org/abs/2212.01609v3",
+   "pdf_url": "https://arxiv.org/pdf/2212.01609v3"
+  },
+  {
+   "arxiv_id": "2407.16036",
+   "title": "Transformer-based Capacity Prediction for Lithium-ion Batteries with Data Augmentation",
+   "authors": [
+    "Gift Modekwe",
+    "Saif Al-Wahaibi",
+    "Qiugang Lu"
+   ],
+   "published": "2024-07-22",
+   "updated": "2024-07-22",
+   "categories": [
+    "cs.LG",
+    "eess.SP"
+   ],
+   "abstract": "Lithium-ion batteries are pivotal to technological advancements in transportation, electronics, and clean energy storage. The optimal operation and safety of these batteries require proper and reliable estimation of battery capacities to monitor the state of health. Current methods for estimating the capacities fail to adequately account for long-term temporal dependencies of key variables (e.g., voltage, current, and temperature) associated with battery aging and degradation. In this study, we explore the usage of transformer networks to enhance the estimation of battery capacity. We develop a transformer-based battery capacity prediction model that accounts for both long-term and short-term patterns in battery data. Further, to tackle the data scarcity issue, data augmentation is used to increase the data size, which helps to improve the performance of the model. Our proposed method is validated with benchmark datasets. Simulation results show the effectiveness of data augmentation and the transformer network in improving the accuracy and robustness of battery capacity prediction.",
+   "url": "https://arxiv.org/abs/2407.16036v1",
+   "pdf_url": "https://arxiv.org/pdf/2407.16036v1"
+  },
+  {
+   "arxiv_id": "2509.10496",
+   "title": "SOH-KLSTM: A Hybrid Kolmogorov-Arnold Network and LSTM Model for Enhanced Lithium-Ion Battery Health Monitoring",
+   "authors": [
+    "Imen Jarraya",
+    "Safa Ben Atitallah",
+    "Fatimah Alahmeda",
+    "Mohamed Abdelkadera",
+    "Maha Drissa",
+    "Fatma Abdelhadic",
+    "Anis Koubaaa"
+   ],
+   "published": "2025-08-31",
+   "updated": "2025-08-31",
+   "categories": [
+    "cs.LG"
+   ],
+   "abstract": "Accurate and reliable State Of Health (SOH) estimation for Lithium (Li) batteries is critical to ensure the longevity, safety, and optimal performance of applications like electric vehicles, unmanned aerial vehicles, consumer electronics, and renewable energy storage systems. Conventional SOH estimation techniques fail to represent the non-linear and temporal aspects of battery degradation effectively. In this study, we propose a novel SOH prediction framework (SOH-KLSTM) using Kolmogorov-Arnold Network (KAN)-Integrated Candidate Cell State in LSTM for Li batteries Health Monitoring. This hybrid approach combines the ability of LSTM to learn long-term dependencies for accurate time series predictions with KAN's non-linear approximation capabilities to effectively capture complex degradation behaviors in Lithium batteries.",
+   "url": "https://arxiv.org/abs/2509.10496v1",
+   "pdf_url": "https://arxiv.org/pdf/2509.10496v1"
+  },
+  {
+   "arxiv_id": "2404.04049",
+   "title": "Cycle Life Prediction for Lithium-ion Batteries: Machine Learning and More",
+   "authors": [
+    "Joachim Schaeffer",
+    "Giacomo Galuppini",
+    "Jinwook Rhyu",
+    "Patrick A. Asinger",
+    "Robin Droop",
+    "Rolf Findeisen",
+    "Richard D. Braatz"
+   ],
+   "published": "2024-04-05",
+   "updated": "2024-04-05",
+   "categories": [
+    "eess.SY",
+    "cs.LG"
+   ],
+   "abstract": "Batteries are dynamic systems with complicated nonlinear aging, highly dependent on cell design, chemistry, manufacturing, and operational conditions. Prediction of battery cycle life and estimation of aging states is important to accelerate battery R&D, testing, and to further the understanding of how batteries degrade. Beyond testing, battery management systems rely on real-time models and onboard diagnostics and prognostics for safe operation. Estimating the state of health and remaining useful life of a battery is important to optimize performance and use resources optimally. This tutorial begins with an overview of first-principles, machine learning, and hybrid battery models. Then, a typical pipeline for the development of interpretable machine learning models is explained and showcased for cycle life prediction from laboratory testing data. We highlight the challenges of machine learning models, motivating the incorporation of physics in hybrid modeling approaches, which are needed to decipher the aging trajectory of batteries but require more data and further work on the physics of battery degradation. The tutorial closes with a discussion on generalization and further research directions.",
+   "url": "https://arxiv.org/abs/2404.04049v1",
+   "pdf_url": "https://arxiv.org/pdf/2404.04049v1"
+  },
+  {
+   "arxiv_id": "2411.00233",
+   "title": "SambaMixer: State of Health Prediction of Li-ion Batteries using Mamba State Space Models",
+   "authors": [
+    "José Ignacio Olalde-Verano",
+    "Sascha Kirch",
+    "Clara Pérez-Molina",
+    "Sergio Martin"
+   ],
+   "published": "2024-10-31",
+   "updated": "2024-10-31",
+   "categories": [
+    "cs.LG"
+   ],
+   "abstract": "The state of health (SOH) of a Li-ion battery is a critical parameter that determines the remaining capacity and the remaining lifetime of the battery. In this paper, we propose SambaMixer a novel structured state space model (SSM) for predicting the state of health of Li-ion batteries. The proposed SSM is based on the MambaMixer architecture, which is designed to handle multi-variate time signals. We evaluate our model on the NASA battery discharge dataset and show that our model outperforms the state-of-the-art on this dataset. We further introduce a novel anchor-based resampling method which ensures time signals are of the expected length while also serving as augmentation technique. Finally, we condition prediction on the sample time and the cycle time difference using positional encodings to improve the performance of our model and to learn recuperation effects. Our results proof that our model is able to predict the SOH of Li-ion batteries with high accuracy and robustness.",
+   "url": "https://arxiv.org/abs/2411.00233v1",
+   "pdf_url": "https://arxiv.org/pdf/2411.00233v1"
+  },
+  {
+   "arxiv_id": "2309.10014",
+   "title": "Prognosis of Multivariate Battery State of Performance and Health via Transformers",
+   "authors": [
+    "Noah H. Paulson",
+    "Joseph J. Kubal",
+    "Susan J. Babinec"
+   ],
+   "published": "2023-09-18",
+   "updated": "2023-09-18",
+   "categories": [
+    "cs.LG",
+    "eess.SP"
+   ],
+   "abstract": "Batteries are an essential component in a deeply decarbonized future. Understanding battery performance and \"useful life\" as a function of design and use is of paramount importance to accelerating adoption. Historically, battery state of health (SOH) was summarized by a single parameter, the fraction of a battery's capacity relative to its initial state. A more useful approach, however, is a comprehensive characterization of its state and complexities, using an interrelated set of descriptors including capacity, energy, ionic and electronic impedances, open circuit voltages, and microstructure metrics. Indeed, predicting across an extensive suite of properties as a function of battery use is a \"holy grail\" of battery science; it can provide unprecedented insights toward the design of better batteries with reduced experimental effort, and de-risking energy storage investments that are necessary to meet CO2 reduction targets. In this work, we present a first step in that direction via deep transformer networks for the prediction of 28 battery state of health descriptors using two cycling datasets representing six lithium-ion cathode chemistries (LFP, NMC111, NMC532, NMC622, HE5050, and 5Vspinel), multiple electrolyte/anode compositions, and different charge-discharge scenarios. The accuracy of these predictions versus battery life (with an unprecedented mean absolute error of 19 cycles in predicting end of life for an LFP fast-charging dataset) illustrates the promise of deep learning towards providing deeper understanding and control of battery health.",
+   "url": "https://arxiv.org/abs/2309.10014v1",
+   "pdf_url": "https://arxiv.org/pdf/2309.10014v1"
+  },
+  {
+   "arxiv_id": "2203.03737",
+   "title": "Battery Cloud with Advanced Algorithms",
+   "authors": [
+    "Xiaojun Li",
+    "David Jauernig",
+    "Mengzhu Gao",
+    "Trevor Jones"
+   ],
+   "published": "2022-03-07",
+   "updated": "2022-05-12",
+   "categories": [
+    "eess.SY",
+    "cs.AI"
+   ],
+   "abstract": "A Battery Cloud or cloud battery management system leverages the cloud computational power and data storage to improve battery safety, performance, and economy. This work will present the Battery Cloud that collects measured battery data from electric vehicles and energy storage systems. Advanced algorithms are applied to improve battery performance. Using remote vehicle data, we train and validate an artificial neural network to estimate pack SOC during vehicle charging. The strategy is then tested on vehicles. Furthermore, high accuracy and onboard battery state of health estimation methods for electric vehicles are developed based on the differential voltage (DVA) and incremental capacity analysis (ICA). Using cycling data from battery cells at various temperatures, we extract the charging cycles and calculate the DVA and ICA curves, from which multiple features are extracted, analyzed, and eventually used to estimate the state of health. For battery safety, a data-driven thermal anomaly detection method is developed. The method can detect unforeseen anomalies such as thermal runaways at the very early stage. With the further development of the internet of things, more and more battery data will be available. Potential applications of battery cloud also include areas such as battery manufacture, recycling, and electric vehicle battery swap.",
+   "url": "https://arxiv.org/abs/2203.03737v2",
+   "pdf_url": "https://arxiv.org/pdf/2203.03737v2"
+  },
+  {
+   "arxiv_id": "2512.15622",
+   "title": "Operator-Theoretic Joint Estimation of Aging-Aware State of Charge and Control-Informed State of Health",
+   "authors": [
+    "Rahmat K. Adesunkanmi",
+    "Adel Alaeddini",
+    "Mahesh Krishnamurthy"
+   ],
+   "published": "2025-12-17",
+   "updated": "2025-12-17",
+   "categories": [
+    "eess.SY"
+   ],
+   "abstract": "Accurate estimation of a battery's state of charge and state of health is essential for safe and reliable battery management. Existing approaches often decouple these two states, lack stability guarantees, and exhibit limited generalization across operating conditions. This study introduces a unified operator-theoretic framework for aging-aware state of charge and control-informed state of health estimation. The architecture couples a Koopman-based latent dynamics model, which enables linear forecasting of nonlinear discharge-capacity evolution under varying operational conditions, with a neural operator that maps measurable intra-cycle signals to state of charge. The predicted discharge capacity is incorporated as a static correction within the neural operator pathway, yielding an age-aware state of charge estimate. Stability is ensured through spectral-radius clipping of the Koopman operator. The overall framework is trained end-to-end and evaluated on real-world lithium-ion battery datasets, demonstrating real-time capability while maintaining stable dynamics. To handle condition shifts and unseen regimes, the method integrates both zero-shot and few-shot out-of-distribution adaptation using only a limited number of cycles. Results show accurate and stable capacity forecasts, competitive state of charge trajectories on held-out cycles, and a direct, model-consistent mechanism for tracking capacity fade as a surrogate for state of health across diverse operating conditions.",
+   "url": "https://arxiv.org/abs/2512.15622v1",
+   "pdf_url": "https://arxiv.org/pdf/2512.15622v1"
+  },
+  {
+   "arxiv_id": "2509.02366",
+   "title": "Towards Intelligent Systems for Battery Management: A Five-Tier Digital Twin Architecture",
+   "authors": [
+    "Tianwen Zhu",
+    "Hao Wang",
+    "Zhiwei Cao",
+    "Simon See",
+    "Yonggang Wen"
+   ],
+   "published": "2025-09-02",
+   "updated": "2026-01-12",
+   "categories": [
+    "cs.NI"
+   ],
+   "abstract": "As digital twin technologies are increasingly incorporated into battery management systems to meet the growing need for transparent and lifecycle-aware operation, existing battery digital twins still suffer from fragmented operational processes and lack an architectural perspective to coordinate modeling, inference, and decision-making throughout the battery lifecycle. To this end, we develop a unified five-tier battery digital twin framework that integrates key functionalities into a coherent pipeline and facilitates a clearer architectural understanding of digital twins. The five-tier comprises geometric modeling, descriptive analytics, physics-informed prediction, prescriptive optimization, and autonomous control. In quantitative evaluation, the resulting architecture achieves high-fidelity multi-physics calibration with 0.92\\% voltage and 0.18\\% temperature prediction error, and provides state-of-health estimation with 1.09\\% MAPE and calibrated uncertainty. As the first battery digital twin system empowered by the NVIDIA ecosystem with physics-AI technologies, our proposed five-tier framework shifts battery management from reactive protection to an interpretable, predictive, and autonomous paradigm, paving the path to develop next-generation battery management and energy management systems.",
+   "url": "https://arxiv.org/abs/2509.02366v2",
+   "pdf_url": "https://arxiv.org/pdf/2509.02366v2"
+  },
+  {
+   "arxiv_id": "2601.06195",
+   "title": "EntroLnn: Entropy-Guided Liquid Neural Networks for Operando Refinement of Battery Capacity Fade Trajectories",
+   "authors": [
+    "Wei Li",
+    "Wei Zhang",
+    "Qingyu Yan"
+   ],
+   "published": "2026-01-08",
+   "updated": "2026-01-08",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "abstract": "Battery capacity degradation prediction has long been a central topic in battery health analytics, and most studies focus on state of health (SoH) estimation and end of life (EoL) prediction. This study extends the scope to online refinement of the entire capacity fade trajectory (CFT) through EntroLnn, a framework based on entropy-guided transformable liquid neural networks (LNNs). EntroLnn treats CFT refinement as an integrated process rather than two independent tasks for pointwise SoH and EoL. We introduce entropy-based features derived from online temperature fields, applied for the first time in battery analytics, and combine them with customized LNNs that model temporal battery dynamics effectively. The framework enhances both static and dynamic adaptability of LNNs and achieves robust and generalizable CFT refinement across different batteries and operating conditions. The approach provides a high fidelity battery health model with lightweight computation, achieving mean absolute errors of only 0.004577 for CFT and 18 cycles for EoL prediction. This work establishes a foundation for entropy-informed learning in battery analytics and enables self-adaptive, lightweight, and interpretable battery health prediction in practical battery management systems.",
+   "url": "https://arxiv.org/abs/2601.06195v1",
+   "pdf_url": "https://arxiv.org/pdf/2601.06195v1"
+  },
+  {
+   "arxiv_id": "2607.22421",
+   "title": "StateFormer: A Multivariate Transformer for Learning History-Dependent Battery State Dynamics and Long-Horizon Health Forecasting",
+   "authors": [
+    "Zhe Bai",
+    "Stephen Harris"
+   ],
+   "published": "2026-07-24",
+   "updated": "2026-07-24",
+   "categories": [
+    "eess.SY"
+   ],
+   "abstract": "This paper introduces a novel multivariate Transformer \\emph{StateFormer} that forecasts degradation dynamics of large-scale battery systems. The model learns across time scales, from short-term thermal fluctuations to long-term aging trajectories, enabling accurate prediction of battery states including state of charge (SOC), state of health (SOH), or battery temperature. By capturing long-range dependencies and identifying the operating conditions that drive future degradation, the model simultaneously represents fast electrochemical and thermal processes and slow aging mechanisms within a unified framework. \\emph{StateFormer} achieves robust and accurate predictions of battery state estimation across both synthetic and real-world datasets. It maintains high predictive performance under additive current/voltage noise levels ranging from $1\\%$ to $10\\%$ and a wide range of ambient temperatures in a synthetic battery fleet accommodating different types of electrode chemistry and manufacturing, as well as five years of field data collected from residential utility battery systems. The resulting model bridges the laboratory-to-field gap and provides predictive intelligence for maintenance planning, operational optimization, and economic decision-making.",
+   "url": "https://arxiv.org/abs/2607.22421v1",
+   "pdf_url": "https://arxiv.org/pdf/2607.22421v1"
+  },
+  {
+   "arxiv_id": "2507.05765",
+   "title": "Real-time monitoring of the SoH of lithium-ion batteries",
+   "authors": [
+    "Bruno Jammes",
+    "Edgar Hernando Sepúlveda-Oviedo",
+    "Corinne Alonso"
+   ],
+   "published": "2025-07-08",
+   "updated": "2025-07-08",
+   "categories": [
+    "cs.AI"
+   ],
+   "abstract": "Real-time monitoring of the state of health (SoH) of batteries remains a major challenge, particularly in microgrids where operational constraints limit the use of traditional methods. As part of the 4BLife project, we propose an innovative method based on the analysis of a discharge pulse at the end of the charge phase. The parameters of the equivalent electrical model describing the voltage evolution across the battery terminals during this current pulse are then used to estimate the SoH. Based on the experimental data acquired so far, the initial results demonstrate the relevance of the proposed approach. After training using the parameters of two batteries with a capacity degradation of around 85%, we successfully predicted the degradation of two other batteries, cycled down to approximately 90% SoH, with a mean absolute error of around 1% in the worst case, and an explainability score of the estimator close to 0.9. If these performances are confirmed, this method can be easily integrated into battery management systems (BMS) and paves the way for optimized battery management under continuous operation.",
+   "url": "https://arxiv.org/abs/2507.05765v1",
+   "pdf_url": "https://arxiv.org/pdf/2507.05765v1"
+  },
+  {
+   "arxiv_id": "2102.00837",
+   "title": "Machine learning pipeline for battery state of health estimation",
+   "authors": [
+    "Darius Roman",
+    "Saurabh Saxena",
+    "Valentin Robu",
+    "Michael Pecht",
+    "David Flynn"
+   ],
+   "published": "2021-02-01",
+   "updated": "2021-02-01",
+   "categories": [
+    "cs.LG"
+   ],
+   "abstract": "Lithium-ion batteries are ubiquitous in modern day applications ranging from portable electronics to electric vehicles. Irrespective of the application, reliable real-time estimation of battery state of health (SOH) by on-board computers is crucial to the safe operation of the battery, ultimately safeguarding asset integrity. In this paper, we design and evaluate a machine learning pipeline for estimation of battery capacity fade - a metric of battery health - on 179 cells cycled under various conditions. The pipeline estimates battery SOH with an associated confidence interval by using two parametric and two non-parametric algorithms. Using segments of charge voltage and current curves, the pipeline engineers 30 features, performs automatic feature selection and calibrates the algorithms. When deployed on cells operated under the fast-charging protocol, the best model achieves a root mean squared percent error of 0.45\\%. This work provides insights into the design of scalable data-driven models for battery SOH estimation, emphasising the value of confidence bounds around the prediction. The pipeline methodology combines experimental data with machine learning modelling and can be generalized to other critical components that require real-time estimation of SOH.",
+   "url": "https://arxiv.org/abs/2102.00837v1",
+   "pdf_url": "https://arxiv.org/pdf/2102.00837v1"
+  },
+  {
+   "arxiv_id": "2403.05430",
+   "title": "MambaLithium: Selective state space model for remaining-useful-life, state-of-health, and state-of-charge estimation of lithium-ion batteries",
+   "authors": [
+    "Zhuangwei Shi"
+   ],
+   "published": "2024-03-08",
+   "updated": "2024-03-08",
+   "categories": [
+    "cs.CE"
+   ],
+   "abstract": "Recently, lithium-ion batteries occupy a pivotal position in the realm of electric vehicles and the burgeoning new energy industry. Their performance is heavily dependent on three core states: remaining-useful-life (RUL), state-of-health (SOH), and state-of-charge (SOC). Given the remarkable success of Mamba (Structured state space sequence models with selection mechanism and scan module, S6) in sequence modeling tasks, this paper introduces MambaLithium, a selective state space model tailored for precise estimation of these critical battery states. Leveraging Mamba algorithms, MambaLithium adeptly captures the intricate aging and charging dynamics of lithium-ion batteries. By focusing on pivotal states within the battery's operational envelope, MambaLithium not only enhances estimation accuracy but also maintains computational robustness. Experiments conducted using real-world battery data have validated the model's superiority in predicting battery health and performance metrics, surpassing current methods. The proposed MambaLithium framework is potential for applications in advancing battery management systems and fostering sustainable energy storage solutions. Source code is available at https://github.com/zshicode/MambaLithium.",
+   "url": "https://arxiv.org/abs/2403.05430v1",
+   "pdf_url": "https://arxiv.org/pdf/2403.05430v1"
+  },
+  {
+   "arxiv_id": "2307.05163",
+   "title": "A Mapping Study of Machine Learning Methods for Remaining Useful Life Estimation of Lead-Acid Batteries",
+   "authors": [
+    "Sérgio F Chevtchenko",
+    "Elisson da Silva Rocha",
+    "Bruna Cruz",
+    "Ermeson Carneiro de Andrade",
+    "Danilo Ricardo Barbosa de Araújo"
+   ],
+   "published": "2023-07-11",
+   "updated": "2023-07-11",
+   "categories": [
+    "cs.LG"
+   ],
+   "abstract": "Energy storage solutions play an increasingly important role in modern infrastructure and lead-acid batteries are among the most commonly used in the rechargeable category. Due to normal degradation over time, correctly determining the battery's State of Health (SoH) and Remaining Useful Life (RUL) contributes to enhancing predictive maintenance, reliability, and longevity of battery systems. Besides improving the cost savings, correct estimation of the SoH can lead to reduced pollution though reuse of retired batteries. This paper presents a mapping study of the state-of-the-art in machine learning methods for estimating the SoH and RUL of lead-acid batteries. These two indicators are critical in the battery management systems of electric vehicles, renewable energy systems, and other applications that rely heavily on this battery technology. In this study, we analyzed the types of machine learning algorithms employed for estimating SoH and RUL, and evaluated their performance in terms of accuracy and inference time. Additionally, this mapping identifies and analyzes the most commonly used combinations of sensors in specific applications, such as vehicular batteries. The mapping concludes by highlighting potential gaps and opportunities for future research, which lays the foundation for further advancements in the field.",
+   "url": "https://arxiv.org/abs/2307.05163v1",
+   "pdf_url": "https://arxiv.org/pdf/2307.05163v1"
+  },
+  {
+   "arxiv_id": "2405.12028",
+   "title": "The Case for DeepSOH: Addressing Path Dependency for Remaining Useful Life",
+   "authors": [
+    "Hamidreza Movahedi",
+    "Andrew Weng",
+    "Sravan Pannala",
+    "Jason B. Siegel",
+    "Anna G. Stefanopoulou"
+   ],
+   "published": "2024-05-20",
+   "updated": "2024-05-20",
+   "categories": [
+    "eess.SY"
+   ],
+   "abstract": "The battery state of health (SOH) based on capacity fade and resistance increase is not sufficient for predicting Remaining Useful life (RUL). The electrochemical community blames the path-dependency of the battery degradation mechanisms for our inability to forecast the degradation. The control community knows that the path-dependency is addressed by full state estimation. We show that even the electrode-specific SOH (eSOH) estimation is not enough to fully define the degradation states by simulating infinite possible degradation trajectories and remaining useful lives (RUL) from a unique eSOH. We finally define the deepSOH states that capture the individual contributions of all the common degradation mechanisms, namely, SEI, plating, and mechanical fracture to the loss of lithium inventory. We show that the addition of cell expansion measurement may allow us to estimate the deepSOH and predict the remaining useful life.",
+   "url": "https://arxiv.org/abs/2405.12028v1",
+   "pdf_url": "https://arxiv.org/pdf/2405.12028v1"
+  },
+  {
+   "arxiv_id": "2308.13993",
+   "title": "Comprehensive performance comparison among different types of features in data-driven battery state of health estimation",
+   "authors": [
+    "Xinhong Feng",
+    "Yongzhi Zhang",
+    "Rui Xiong",
+    "Chun Wang"
+   ],
+   "published": "2023-08-27",
+   "updated": "2023-08-27",
+   "categories": [
+    "eess.SY"
+   ],
+   "abstract": "Battery state of health (SOH), which informs the maximal available capacity of the battery, is a key indicator of battery aging failure. Accurately estimating battery SOH is a vital function of the battery management system that remains to be addressed. In this study, a physics-informed Gaussian process regression (GPR) model is developed for battery SOH estimation, with the performance being systematically compared with that of different types of features and machine learning (ML) methods. The method performance is validated based on 58826 cycling data units of 118 cells. Experimental results show that the physics-driven ML generally estimates more accurate SOH than other non-physical features under different scenarios. The physical features-based GPR predicts battery SOH with the errors being less than 1.1% based on 10 to 20 mins' relaxation data. And the high robustness and generalization capability of the methodology is also validated against different ratios of training and test data under unseen conditions. Results also highlight the more effective capability of knowledge transfer between different types of batteries with the physical features and GPR. This study demonstrates the excellence of physical features in indicating the state evolution of complex systems, and the improved indication performance of these features by combining a suitable ML method.",
+   "url": "https://arxiv.org/abs/2308.13993v1",
+   "pdf_url": "https://arxiv.org/pdf/2308.13993v1"
+  },
+  {
+   "arxiv_id": "2503.23858",
+   "title": "Incremental capacity-based multi-feature fusion model for predicting state-of-health of lithium-ion batteries",
+   "authors": [
+    "Chenyu Jia",
+    "Guangshu Xia",
+    "Yuanhao Shi",
+    "Jianfang Jia",
+    "Jie Wen",
+    "Jianchao Zeng"
+   ],
+   "published": "2025-03-31",
+   "updated": "2025-03-31",
+   "categories": [
+    "eess.SY"
+   ],
+   "abstract": "Lithium-ion batteries have become an indispensable part of human industrial production and daily life. For the safe use, management and maintenance of lithium-ion batteries, the state of health (SOH) of lithium-ion batteries is an important indicator so that the SOH estimation is of significant practical value. In order to accurately predict SOH, this paper proposes a fusion prediction model which combines particle swarm optimization (PSO) algorithm, bi-directional long-short time memory network (BiLSTM) and adaptive boosting (AdaBoost) algorithm. In the proposed prediction model, indirect health indicators (HIs), which characterize battery degradation, are obtained with the help of incremental capacity analysis (ICA), and is fed into BiLSTM to extract time-series features, whose parameters are optimized by employing PSO algorithm. On this basis, the AdaBoost algorithm is applied to reduce the risk of overfitting the PSO-BiLSTM model. The study based on lithium-ion battery data from Center for Advanced Life Cycle Engineering (CALCE) shows that the PSO-BiLSTM-AdaBoost model has higher accuracy, better robustness, and generalization ability.",
+   "url": "https://arxiv.org/abs/2503.23858v1",
+   "pdf_url": "https://arxiv.org/pdf/2503.23858v1"
+  },
+  {
+   "arxiv_id": "2406.00276",
+   "title": "Machine Learning-Assisted Sustainable Remanufacturing, Reusing and Recycling for Lithium-ion Batteries",
+   "authors": [
+    "Shengyu Tao"
+   ],
+   "published": "2024-06-01",
+   "updated": "2025-09-26",
+   "categories": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CE",
+    "physics.data-an"
+   ],
+   "abstract": "The sustainable utilization of lithium-ion batteries (LIBs) is crucial to the global energy transition and carbon neutrality, yet data scarcity and heterogeneity remain major barriers across remanufacturing, reusing, and recycling. This dissertation develops a machine learning assisted framework to address these challenges throughout the battery lifecycle. A physics informed quality control model predicts long-term degradation from limited early-cycle data, while a generative learning based residual value assessment method enables rapid and accurate evaluation of retired batteries under random conditions. A federated learning strategy achieves privacy preserving and high precision cathode material sorting, supporting efficient recycling. Furthermore, a unified diagnostics and prognostics framework based on correlation alignment enhances adaptability across tasks such as state of health estimation, state of charge estimation, and remaining useful life prediction under varied testing protocols. Collectively, these contributions advance sustainable battery management by integrating physics, data generation, privacy preserving collaboration, and adaptive learning, offering methodological innovations to promote circular economy and global carbon neutrality.",
+   "url": "https://arxiv.org/abs/2406.00276v2",
+   "pdf_url": "https://arxiv.org/pdf/2406.00276v2"
+  },
+  {
+   "arxiv_id": "2607.13709",
+   "title": "Predicting BESS Degradation with Uncertainty Quantification: A Probabilistic Framework for Battery Energy Storage Systems",
+   "authors": [
+    "Melina Graner",
+    "Holger Hesse",
+    "Andreas Jossen"
+   ],
+   "published": "2026-07-15",
+   "updated": "2026-07-15",
+   "categories": [
+    "eess.SY"
+   ],
+   "abstract": "Accurate and uncertainty-aware prediction of battery degradation is essential for the reliable operation and lifecycle management of energy storage systems, yet traditional deterministic models fail to capture the inherent uncertainty in degradation processes. This study introduces a framework for probabilistic battery state-of-health prediction. The framework leverages deep learning models to generate predictive distributions for capacity loss, conditioned on stress factors. Uncertainty is propagated through stochastic degradation trajectories, enabling robust predictions even under dynamic operating conditions. A key advancement is the framework's scalability to full-system data: by integrating cell-level predictions with system topology and real-world operational variability, it provides probabilistic estimates for entire battery energy storage systems. The approach is tested using multi-year field data from residential storage systems, demonstrating its ability to mimic system-level degradation behavior. The framework predicts SOH degradation with 95\\% prediction intervals that align well with remaining capacity measurements performed on the field system. This work bridges the gap between laboratory test derived battery cell aging models and full-system operational data evaluation for degradation estimation, offering a practical tool for data-driven asset management in modern energy systems.",
+   "url": "https://arxiv.org/abs/2607.13709v1",
+   "pdf_url": "https://arxiv.org/pdf/2607.13709v1"
+  },
+  {
+   "arxiv_id": "2607.06791",
+   "title": "Machine Learning-Based Battery State-of-health Prediction for Unmanned Aerial Vehicles Predictive Maintenance",
+   "authors": [
+    "Jiarui Xie",
+    "Lingchen Kong",
+    "Mohamed Rami Latreche",
+    "Sean Smith",
+    "Elaine Mosconi",
+    "Yaoyao Fiona Zhao"
+   ],
+   "published": "2026-07-07",
+   "updated": "2026-07-07",
+   "categories": [
+    "cs.CE"
+   ],
+   "abstract": "Battery state-of-health (SoH) prediction aims to estimate the remaining capacity by modeling battery degradation through its life cycle. Machine learning (ML)-based SoH models can accurately predict the battery remaining capacity based on voltage, current, and temperature. Battery SoH prediction for unmanned aerial vehicles (UAVs) is a crucial yet overlooked domain with data scarcity and high variability. Accurate battery SoH information contributes to efficient predictive maintenance, enhancing UAV profitability and flight safety. However, UAVs are compatible with a variety of batteries and the available data for each type of battery are scarce. Furthermore, the available input features from UAV batteries are limited to the built-in sensors because of the lightweight requirements. This research aims to develop an ML pipeline for UAV battery SoH prediction while mitigating data scarcity using knowledge transfer. 342 and 289 flight experiments have been conducted to collect operational data from lithium polymer batteries of 2200 mAh and 1100 mAh, respectively. Voltage, current, and throttle are selected as the input features of the ML model according to the existing literature and sensor availability. The remaining capacity is measured at every 10th experiment to label the dataset. To address data scarcity, the time-series data acquired from the experiments are transformed into images to utilize the image feature extraction capability of a pretrained ResNet-50. Finally, accurate SoH prediction models were obtained using transfer learning between two battery types.",
+   "url": "https://arxiv.org/abs/2607.06791v1",
+   "pdf_url": "https://arxiv.org/pdf/2607.06791v1"
+  },
+  {
+   "arxiv_id": "2401.04734",
+   "title": "Towards a BMS2 Design Framework: Adaptive Data-driven State-of-health Estimation for Second-Life Batteries with BIBO Stability Guarantees",
+   "authors": [
+    "Xiaofan Cui",
+    "Muhammad Aadil Khan",
+    "Surinder Singh",
+    "Ratnesh Sharma",
+    "Simona Onori"
+   ],
+   "published": "2024-01-08",
+   "updated": "2024-07-15",
+   "categories": [
+    "eess.SY"
+   ],
+   "abstract": "A key challenge that is currently hindering the widespread use of retired electric vehicle (EV) batteries for second-life (SL) applications is the ability to accurately estimate and monitor their state of health (SOH). Second-life battery systems can be sourced from different battery packs with lack of knowledge of their historical usage. To tackle the in-the-field use of SL batteries, this paper introduces an online adaptive health estimation approach with guaranteed bounded-input-bounded-output (BIBO) stability. This method relies exclusively on operational data that can be accessed in real time from SL batteries. The effectiveness of the proposed approach is shown on a laboratory aged experimental data set of retired EV batteries. The estimator gains are dynamically adapted to accommodate the distinct characteristics of each individual cell, making it a promising candidate for future SL battery management systems (BMS2).",
+   "url": "https://arxiv.org/abs/2401.04734v2",
+   "pdf_url": "https://arxiv.org/pdf/2401.04734v2"
+  },
+  {
+   "arxiv_id": "2511.12053",
+   "title": "Real-Time Physics-Aware Battery Health Monitoring from Partial Charging Profiles via Physics-Informed Neural Networks",
+   "authors": [
+    "Xubo Gu",
+    "Xun Huan",
+    "Yao Ren",
+    "Wenqing Zhou",
+    "Weiran Jiang",
+    "Ziyou Song"
+   ],
+   "published": "2025-11-15",
+   "updated": "2025-11-15",
+   "categories": [
+    "eess.SY"
+   ],
+   "abstract": "Monitoring battery health is essential for ensuring safe and efficient operation. However, there is an inherent trade-off between assessment speed and diagnostic depth-specifically, between rapid overall health estimation and precise identification of internal degradation states. Capturing detailed internal battery information efficiently remains a major challenge, yet such insights are key to understanding the various degradation mechanisms. To address this, we develop a parameterized physics-informed neural network (P-PINNSPM) over the key aging-related parameter space for a single particle model. The model can accurately predict internal battery variables across the parameter space and identifies internal parameters in about 30 seconds-achieving a 47x speedup over the finite volume method-while maintaining high accuracy. These parameters improve the battery state-of-health (SOH) estimation accuracy by at least 60.61%, compared to models without parameter incorporation. Moreover, they enable extrapolation to unseen SOH levels and support robust estimation across diverse charging profiles and operating conditions. Our results demonstrate the strong potential of physics-informed machine learning to advance real-time, data-efficient, and physics-aware battery management systems.",
+   "url": "https://arxiv.org/abs/2511.12053v1",
+   "pdf_url": "https://arxiv.org/pdf/2511.12053v1"
+  },
+  {
+   "arxiv_id": "2602.18042",
+   "title": "PINEAPPLE: Physics-Informed Neuro-Evolution Algorithm for Prognostic Parameter Inference in Lithium-Ion Battery Electrodes",
+   "authors": [
+    "Karkulali Pugalenthi",
+    "Jian Cheng Wong",
+    "Qizheng Yang",
+    "Pao-Hsiung Chiu",
+    "My Ha Dao",
+    "Nagarajan Raghavan",
+    "Chinchun Ooi"
+   ],
+   "published": "2026-02-20",
+   "updated": "2026-02-20",
+   "categories": [
+    "cs.CE",
+    "cs.NE",
+    "physics.comp-ph"
+   ],
+   "abstract": "Accurate, real-time, yet non-destructive estimation of internal states in lithium-ion batteries is critical for predicting degradation, optimizing usage strategies, and extending operational lifespan. Here, we introduce PINEAPPLE (Physics-Informed Neuro-Evolution Algorithm for Prognostic Parameter inference in Lithium-ion battery Electrodes), a novel framework that integrates physics-informed neural networks (PINNs) with an evolutionary search algorithm to enable rapid, scalable, and interpretable parameter inference with potential for application to next-generation batteries. The meta-learned PINN utilizes fundamental physics principles to achieve accurate zero-shot prediction of electrode behavior with test errors below 0.1$\\%$ while maintaining an order-of-magnitude speed-up over conventional solvers. PINEAPPLE demonstrates robust parameter inference solely from voltage-time discharge curves across multiple batteries from the open-source CALCE repository, recovering the evolution of key internal state parameters such as Li-ion diffusion coefficients across usage cycles. Notably, the inferred cycle-dependent evolution of these parameters exhibit consistent trends across different batteries without any customized degradation physics-embedded heuristic, highlighting the effective regularizing effect and robustness that can be conferred through incorporation of fundamental physics in PINEAPPLE. By enabling computationally efficient, real-time parameter estimation, PINEAPPLE offers a promising route towards the non-destructive, physics-based characterization of inter-cell and intra-cell variability of battery modules and battery packs, thereby unlocking new opportunities for downstream on-the-fly needs in next-generation battery management systems such as individual cell-scale state-of-health diagnostics.",
+   "url": "https://arxiv.org/abs/2602.18042v1",
+   "pdf_url": "https://arxiv.org/pdf/2602.18042v1"
+  },
+  {
+   "arxiv_id": "2210.11941",
+   "title": "DIICAN: Dual Time-scale State-Coupled Co-estimation of SOC, SOH and RUL for Lithium-Ion Batteries",
+   "authors": [
+    "Ningbo Cai",
+    "Yuwen Qin",
+    "Xin Chen",
+    "Kai Wu"
+   ],
+   "published": "2022-10-20",
+   "updated": "2022-10-20",
+   "categories": [
+    "eess.SY",
+    "cs.LG",
+    "physics.data-an"
+   ],
+   "abstract": "Accurate co-estimations of battery states, such as state-of-charge (SOC), state-of-health (SOH,) and remaining useful life (RUL), are crucial to the battery management systems to assure safe and reliable management. Although the external properties of the battery charge with the aging degree, batteries' degradation mechanism shares similar evolving patterns. Since batteries are complicated chemical systems, these states are highly coupled with intricate electrochemical processes. A state-coupled co-estimation method named Deep Inter and Intra-Cycle Attention Network (DIICAN) is proposed in this paper to estimate SOC, SOH, and RUL, which organizes battery measurement data into the intra-cycle and inter-cycle time scales. And to extract degradation-related features automatically and adapt to practical working conditions, the convolutional neural network is applied. The state degradation attention unit is utilized to extract the battery state evolution pattern and evaluate the battery degradation degree. To account for the influence of battery aging on the SOC estimation, the battery degradation-related state is incorporated in the SOC estimation for capacity calibration. The DIICAN method is validated on the Oxford battery dataset. The experimental results show that the proposed method can achieve SOH and RUL co-estimation with high accuracy and effectively improve SOC estimation accuracy for the whole lifespan.",
+   "url": "https://arxiv.org/abs/2210.11941v1",
+   "pdf_url": "https://arxiv.org/pdf/2210.11941v1"
+  },
+  {
+   "arxiv_id": "2302.12978",
+   "title": "Impact of Thermal Variability on SOC Estimation Algorithms",
+   "authors": [
+    "Wasiue Ahmed",
+    "Mokhi Maan Siddiqui",
+    "Faheemullah Shaikh"
+   ],
+   "published": "2023-02-25",
+   "updated": "2023-02-25",
+   "categories": [
+    "eess.SY"
+   ],
+   "abstract": "While the efficiency of renewable energy components like inverters and PV panels is at an all-time high, there are still research gaps for batteries. Lithium-ion batteries have a lot of potential, but there are still some problems that need fixing, such as thermal management. Because of this, the battery management system accomplishes its goal. In order for a battery management system (BMS) to function properly, it must make accurate estimates of all relevant parameters, including state of health, state of charge, and temperature; however, for the purposes of this article, we will only discuss SOC. The goal of this article is to estimate the SOC of a lithium-ion battery at different temperatures. Comparing the Extended Kalam filter algorithm to coulomb counting at various temperatures concludes this exhaustive investigation. The graphene battery has the highest SOC when operated at the optimal temperature, as determined by extensive analysis and correlation between SOC and temperature is not linear",
+   "url": "https://arxiv.org/abs/2302.12978v1",
+   "pdf_url": "https://arxiv.org/pdf/2302.12978v1"
+  },
+  {
+   "arxiv_id": "2501.18123",
+   "title": "Battery State of Health Estimation Using LLM Framework",
+   "authors": [
+    "Aybars Yunusoglu",
+    "Dexter Le",
+    "Karn Tiwari",
+    "Murat Isik",
+    "I. Can Dikmen"
+   ],
+   "published": "2025-01-30",
+   "updated": "2025-01-30",
+   "categories": [
+    "cs.LG",
+    "eess.SP"
+   ],
+   "abstract": "Battery health monitoring is critical for the efficient and reliable operation of electric vehicles (EVs). This study introduces a transformer-based framework for estimating the State of Health (SoH) and predicting the Remaining Useful Life (RUL) of lithium titanate (LTO) battery cells by utilizing both cycle-based and instantaneous discharge data. Testing on eight LTO cells under various cycling conditions over 500 cycles, we demonstrate the impact of charge durations on energy storage trends and apply Differential Voltage Analysis (DVA) to monitor capacity changes (dQ/dV) across voltage ranges. Our LLM model achieves superior performance, with a Mean Absolute Error (MAE) as low as 0.87\\% and varied latency metrics that support efficient processing, demonstrating its strong potential for real-time integration into EVs. The framework effectively identifies early signs of degradation through anomaly detection in high-resolution data, facilitating predictive maintenance to prevent sudden battery failures and enhance energy efficiency.",
+   "url": "https://arxiv.org/abs/2501.18123v1",
+   "pdf_url": "https://arxiv.org/pdf/2501.18123v1"
+  },
+  {
+   "arxiv_id": "2608.14764",
+   "title": "Real-Time State-of-Health Estimation and Online Degradation Prognosis from Partial Battery Discharge Using Physics-Informed Neural Networks",
+   "authors": [
+    "Begoña Ispizua",
+    "Serio Gil-López",
+    "Leire Arrizabalaga",
+    "Ibai Laña"
+   ],
+   "published": "2026-08-14",
+   "updated": "2026-08-14",
+   "categories": [
+    "cs.LG"
+   ],
+   "abstract": "With the increasing integration of renewable energy sources, energy storage systems have become essential, making the accurate estimation of their State of Health (SOH) and degradation behavior critical. In this work, we propose a physics-informed deep learning approach for lithium-ion battery SOH prediction using incomplete discharge curves extracted from arbitrary voltage ranges, thereby reflecting realistic and heterogeneous operating conditions. The proposed method combines data-driven learning with physically motivated degradation dynamics to ensure consistent and reliable SOH estimation from partial discharge information, achieving a MAPE below 4$\\%$. In addition, a real-time degradation trend estimation strategy is introduced to detect key aging transitions without requiring prior knowledge or historical data, making it applicable to a wide range of batteries. Overall, our approach enables SOH estimation from arbitrary discharge segments and a real-time degradation forecast that continuously integrates all usage, overcoming previous methods that rely on fixed protocols or early, non-adaptive predictions.",
+   "url": "https://arxiv.org/abs/2608.14764v1",
+   "pdf_url": "https://arxiv.org/pdf/2608.14764v1"
+  },
+  {
+   "arxiv_id": "1901.06000",
+   "title": "The Sequential Algorithm for Combined State of Charge and State of Health Estimation of Lithium Ion Battery based on Active Current Injection",
+   "authors": [
+    "Ziyou Song",
+    "Jun Hou",
+    "Xuefeng Li",
+    "Xiaogang Wu",
+    "Xiaosong Hu",
+    "Heath Hofmann",
+    "Jing Sun"
+   ],
+   "published": "2019-01-15",
+   "updated": "2019-07-15",
+   "categories": [
+    "eess.SY"
+   ],
+   "abstract": "When State of Charge, State of Health, and parameters of the Lithium-ion battery are estimated simultaneously, the estimation accuracy is hard to be ensured due to uncertainties in the estimation process. To improve the estimation performance a sequential algorithm, which uses frequency scale separation and estimates parameters/states sequentially by injecting currents with different frequencies, is proposed in this paper. Specifically, by incorporating a high-pass filter, the parameters can be independently characterized by injecting high-frequency and medium-frequency currents, respectively. Using the estimated parameters, battery capacity and State of Charge can then be estimated concurrently. Experimental results show that the estimation accuracy of the proposed sequential algorithm is much better than the concurrent algorithm where all parameters/states are estimated simultaneously, and the computational cost can also be reduced. Finally, experiments are conducted under different temperatures to verify the effectiveness of the proposed algorithm for various battery capacities.",
+   "url": "https://arxiv.org/abs/1901.06000v2",
+   "pdf_url": "https://arxiv.org/pdf/1901.06000v2"
+  },
+  {
+   "arxiv_id": "2607.01286",
+   "title": "IonSense-QKG: A Quantum-Readiness Metadata Framework for Lithium-Ion Battery Dataset Discovery",
+   "authors": [
+    "Sakthi Prabhu Gunasekar",
+    "Prasanna Kumar Rangarajan"
+   ],
+   "published": "2026-07-01",
+   "updated": "2026-07-01",
+   "categories": [
+    "cs.LG",
+    "cs.DB"
+   ],
+   "abstract": "Public lithium-ion battery datasets are increasingly used for state-of-health estimation, remaining-useful-life prediction, anomaly detection, electrochemical diagnostics, second-life analytics, and battery safety research. However, these datasets vary substantially in chemistry, modality, scale, label quality, sequence structure, access status, and preprocessing complexity. These differences directly affect whether a dataset is feasible for near-term hybrid quantum-classical machine-learning workflows. This paper presents IonSense-QKG, a quantum-readiness metadata framework for lithium-ion battery dataset discovery. Starting from the EV-Battery-IonSense index, the proposed framework enriches public battery dataset records with quantum-relevant metadata, including task type, sensing modality, chemistry, label availability, sequence type, preprocessing requirements, candidate quantum encodings, estimated qubit range, and NISQ feasibility. A transparent Quantum Readiness Score is introduced to rank datasets as candidate resources for future hybrid quantum-classical battery benchmarks. The score is intended as a dataset-selection heuristic, not as evidence of quantum advantage. The framework demonstrates query-based discovery over enriched metadata to identify datasets suitable for compact quantum feature maps, quantum time-series workflows, limited-label anomaly detection, and future battery-health benchmarking. The released artifact includes metadata tables, scoring scripts, robustness checks, link-checking utilities, and SQL-style query examples. IonSense-QKG positions dataset selection as a data-management problem and provides a reproducible foundation for data-centric quantum battery analytics.",
+   "url": "https://arxiv.org/abs/2607.01286v1",
+   "pdf_url": "https://arxiv.org/pdf/2607.01286v1"
+  },
+  {
+   "arxiv_id": "2209.05253",
+   "title": "Transfer Learning and Vision Transformer based State-of-Health prediction of Lithium-Ion Batteries",
+   "authors": [
+    "Pengyu Fu",
+    "Liang Chu",
+    "Zhuoran Hou",
+    "Jincheng Hu",
+    "Yanjun Huang",
+    "Yuanjian Zhang"
+   ],
+   "published": "2022-09-07",
+   "updated": "2022-09-07",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "abstract": "In recent years, significant progress has been made in transportation electrification. And lithium-ion batteries (LIB), as the main energy storage devices, have received widespread attention. Accurately predicting the state of health (SOH) can not only ease the anxiety of users about the battery life but also provide important information for the management of the battery. This paper presents a prediction method for SOH based on Vision Transformer (ViT) model. First, discrete charging data of a predefined voltage range is used as an input data matrix. Then, the cycle features of the battery are captured by the ViT which can obtain the global features, and the SOH is obtained by combining the cycle features with the full connection (FC) layer. At the same time, transfer learning (TL) is introduced, and the prediction model based on source task battery training is further fine-tuned according to the early cycle data of the target task battery to provide an accurate prediction. Experiments show that our method can obtain better feature expression compared with existing deep learning methods so that better prediction effect and transfer effect can be achieved.",
+   "url": "https://arxiv.org/abs/2209.05253v1",
+   "pdf_url": "https://arxiv.org/pdf/2209.05253v1"
+  },
+  {
+   "arxiv_id": "2304.08502",
+   "title": "CyFormer: Accurate State-of-Health Prediction of Lithium-Ion Batteries via Cyclic Attention",
+   "authors": [
+    "Zhiqiang Nie",
+    "Jiankun Zhao",
+    "Qicheng Li",
+    "Yong Qin"
+   ],
+   "published": "2023-04-17",
+   "updated": "2023-04-17",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "abstract": "Predicting the State-of-Health (SoH) of lithium-ion batteries is a fundamental task of battery management systems on electric vehicles. It aims at estimating future SoH based on historical aging data. Most existing deep learning methods rely on filter-based feature extractors (e.g., CNN or Kalman filters) and recurrent time sequence models. Though efficient, they generally ignore cyclic features and the domain gap between training and testing batteries. To address this problem, we present CyFormer, a transformer-based cyclic time sequence model for SoH prediction. Instead of the conventional CNN-RNN structure, we adopt an encoder-decoder architecture. In the encoder, row-wise and column-wise attention blocks effectively capture intra-cycle and inter-cycle connections and extract cyclic features. In the decoder, the SoH queries cross-attend to these features to form the final predictions. We further utilize a transfer learning strategy to narrow the domain gap between the training and testing set. To be specific, we use fine-tuning to shift the model to a target working condition. Finally, we made our model more efficient by pruning. The experiment shows that our method attains an MAE of 0.75\\% with only 10\\% data for fine-tuning on a testing battery, surpassing prior methods by a large margin. Effective and robust, our method provides a potential solution for all cyclic time sequence prediction tasks.",
+   "url": "https://arxiv.org/abs/2304.08502v1",
+   "pdf_url": "https://arxiv.org/pdf/2304.08502v1"
+  },
+  {
+   "arxiv_id": "2109.13448",
+   "title": "Lithium-ion Battery State of Health Estimation based on Cycle Synchronization using Dynamic Time Warping",
+   "authors": [
+    "Kate Qi Zhou",
+    "Yan Qin",
+    "Billy Pik Lik Lau",
+    "Chau Yuen",
+    "Stefan Adams"
+   ],
+   "published": "2021-09-28",
+   "updated": "2021-09-28",
+   "categories": [
+    "cs.LG",
+    "eess.SP"
+   ],
+   "abstract": "The state of health (SOH) estimation plays an essential role in battery-powered applications to avoid unexpected breakdowns due to battery capacity fading. However, few studies have paid attention to the problem of uneven length of degrading cycles, simply employing manual operation or leaving to the automatic processing mechanism of advanced machine learning models, like long short-term memory (LSTM). As a result, this causes information loss and caps the full capability of the data-driven SOH estimation models. To address this challenge, this paper proposes an innovative cycle synchronization way to change the existing coordinate system using dynamic time warping, not only enabling the equal length inputs of the estimation model but also preserving all information. By exploiting the time information of the time series, the proposed method embeds the time index and the original measurements into a novel indicator to reflect the battery degradation status, which could have the same length over cycles. Adopting the LSTM as the basic estimation model, the cycle synchronization-based SOH model could significantly improve the prediction accuracy by more than 30% compared to the traditional LSTM.",
+   "url": "https://arxiv.org/abs/2109.13448v1",
+   "pdf_url": "https://arxiv.org/pdf/2109.13448v1"
+  },
+  {
+   "arxiv_id": "2502.16848",
+   "title": "PulseBat: A field-accessible dataset for second-life battery diagnostics from realistic histories using multidimensional rapid pulse test",
+   "authors": [
+    "Shengyu Tao",
+    "Guangyuan Ma",
+    "Huixiong Yang",
+    "Minyan Lu",
+    "Guodan Wei",
+    "Guangmin Zhou",
+    "Xuan Zhang"
+   ],
+   "published": "2025-02-24",
+   "updated": "2025-02-24",
+   "categories": [
+    "cs.AI",
+    "physics.comp-ph"
+   ],
+   "abstract": "As electric vehicles (EVs) approach the end of their operational life, their batteries retain significant economic value and present promising opportunities for second-life use and material recycling. This is particularly compelling for Global South and other underdeveloped regions, where reliable energy storage is vital to addressing critical challenges posed by weak and even nonexistent power grid and energy infrastructures. However, despite this potential, widespread adoption has been hindered by critical uncertainties surrounding the technical performance, safety, and recertification of second-life batteries. In cases where they have been redeployed, mismatches between estimated and actual performance often render batteries technically unsuitable or hazardous, turning them into liabilities for communities they were intended to benefit. This considerable misalignment exacerbates energy access disparities and undermines the broader vision of energy justice, highlighting an urgent need for robust and scalable solutions to unlock the potential. In the PulseBat Dataset, the authors tested 464 retired lithium-ion batteries, covering 3 cathode material types, 6 historical usages, 3 physical formats, and 6 capacity designs. The pulse test experiments were performed repeatedly for each second-life battery with 10 pulse width, 10 pulse magnitude, multiple state-of-charge, and state-of-health conditions, e.g., from 0.37 to 1.03. The PulseBat Dataset recorded these test conditions and the voltage response as well as the temperature signals that were subject to the injected pulse current, which could be used as a valuable data resource for critical diagnostics tasks such as state-of-charge estimation, state-of-health estimation, cathode material type identification, open-circuit voltage reconstruction, thermal management, and beyond.",
+   "url": "https://arxiv.org/abs/2502.16848v1",
+   "pdf_url": "https://arxiv.org/pdf/2502.16848v1"
+  },
+  {
+   "arxiv_id": "2502.14147",
+   "title": "Learning the P2D Model for Lithium-Ion Batteries with SOH Detection",
+   "authors": [
+    "Maricela Best McKay",
+    "Bhushan Gopaluni",
+    "Brian Wetton"
+   ],
+   "published": "2025-02-19",
+   "updated": "2025-02-19",
+   "categories": [
+    "cs.LG",
+    "physics.chem-ph"
+   ],
+   "abstract": "Lithium ion batteries are widely used in many applications. Battery management systems control their optimal use and charging and predict when the battery will cease to deliver the required output on a planned duty or driving cycle. Such systems use a simulation of a mathematical model of battery performance. These models can be electrochemical or data-driven. Electrochemical models for batteries running at high currents are mathematically and computationally complex. In this work, we show that a well-regarded electrochemical model, the Pseudo Two Dimensional (P2D) model, can be replaced by a computationally efficient Convolutional Neural Network (CNN) surrogate model fit to accurately simulated data from a class of random driving cycles. We demonstrate that a CNN is an ideal choice for accurately capturing Lithium ion concentration profiles. Additionally, we show how the neural network model can be adjusted to correspond to battery changes in State of Health (SOH).",
+   "url": "https://arxiv.org/abs/2502.14147v1",
+   "pdf_url": "https://arxiv.org/pdf/2502.14147v1"
+  },
+  {
+   "arxiv_id": "2504.13324",
+   "title": "Robust Estimation of Battery State of Health Using Reference Voltage Trajectory",
+   "authors": [
+    "Rui Huang",
+    "Jackson Fogelquist",
+    "Xinfan Lin"
+   ],
+   "published": "2025-04-17",
+   "updated": "2025-04-17",
+   "categories": [
+    "eess.SY"
+   ],
+   "abstract": "Accurate estimation of state of health (SOH) is critical for battery applications. Current model-based SOH estimation methods typically rely on low C-rate constant current tests to extract health parameters like solid phase volume fraction and lithium-ion stoichiometry, which are often impractical in real-world scenarios due to time and operational constraints. Additionally, these methods are susceptible to modeling uncertainties that can significantly degrade the estimation accuracy, especially when jointly estimating multiple parameters. In this paper, we present a novel reference voltage-based method for robust battery SOH estimation. This method utilizes the voltage response of a battery under a predefined current excitation at the beginning of life (BOL) as a reference to compensate for modeling uncertainty. As the battery degrades, the same excitation is applied to generate the voltage response, which is compared with the BOL trajectory to estimate the key health parameters accurately. The current excitation is optimally designed using the Particle Swarm Optimization algorithm to maximize the information content of the target parameters. Simulation results demonstrate that our proposed method significantly improves parameter estimation accuracy under different degradation levels, compared to conventional methods relying only on direct voltage measurements. Furthermore, our method jointly estimates four key SOH parameters in only 10 minutes, making it practical for real-world battery health diagnostics, e.g., fast testing to enable battery repurposing.",
+   "url": "https://arxiv.org/abs/2504.13324v1",
+   "pdf_url": "https://arxiv.org/pdf/2504.13324v1"
+  },
+  {
+   "arxiv_id": "2304.05084",
+   "title": "A Self-attention Knowledge Domain Adaptation Network for Commercial Lithium-ion Batteries State-of-health Estimation under Shallow Cycles",
+   "authors": [
+    "Xin Chen",
+    "Yuwen Qin",
+    "Weidong Zhao",
+    "Qiming Yang",
+    "Ningbo Cai",
+    "Kai Wu"
+   ],
+   "published": "2023-04-11",
+   "updated": "2023-04-11",
+   "categories": [
+    "cs.LG",
+    "eess.SP"
+   ],
+   "abstract": "Accurate state-of-health (SOH) estimation is critical to guarantee the safety, efficiency and reliability of battery-powered applications. Most SOH estimation methods focus on the 0-100\\% full state-of-charge (SOC) range that has similar distributions. However, the batteries in real-world applications usually work in the partial SOC range under shallow-cycle conditions and follow different degradation profiles with no labeled data available, thus making SOH estimation challenging. To estimate shallow-cycle battery SOH, a novel unsupervised deep transfer learning method is proposed to bridge different domains using self-attention distillation module and multi-kernel maximum mean discrepancy technique. The proposed method automatically extracts domain-variant features from charge curves to transfer knowledge from the large-scale labeled full cycles to the unlabeled shallow cycles. The CALCE and SNL battery datasets are employed to verify the effectiveness of the proposed method to estimate the battery SOH for different SOC ranges, temperatures, and discharge rates. The proposed method achieves a root-mean-square error within 2\\% and outperforms other transfer learning methods for different SOC ranges. When applied to batteries with different operating conditions and from different manufacturers, the proposed method still exhibits superior SOH estimation performance. The proposed method is the first attempt at accurately estimating battery SOH under shallow-cycle conditions without needing a full-cycle characteristic test.",
+   "url": "https://arxiv.org/abs/2304.05084v1",
+   "pdf_url": "https://arxiv.org/pdf/2304.05084v1"
+  },
+  {
+   "arxiv_id": "2604.00400",
+   "title": "Explainable Functional Relation Discovery for Battery State-of-Health Using Kolmogorov-Arnold Network",
+   "authors": [
+    "Sanchita Ghosh",
+    "Tanushree Roy"
+   ],
+   "published": "2026-04-01",
+   "updated": "2026-08-16",
+   "categories": [
+    "eess.SY"
+   ],
+   "abstract": "Battery health management is heavily dependent on reliable State-of-Health (SoH) estimation to ensure battery safety with maximized energy utilization. Although online SoH estimation can effectively track battery degradation, it requires continuous battery data acquisition. In addition, model-based SoH estimation methods rely on accurate battery model knowledge, whereas data-driven approaches often suffer from limited interpretability. In contrast, analytical characterization of SoH will offer a direct and tractable handle on battery performance degradation, while also establishing a foundation for further analytical studies toward effective battery health management. Thus, in this work, we propose a Kolmogorov-Arnold Network (KAN)-based data-driven pipeline to establish a functional relationship for SoH degradation using battery temperature data. Specifically, we learn long-term battery thermal dynamics and battery heat generation via learnable activation functions of our KAN model. We also propose a tailored loss function to incorporate physics-guided learning of the activation functions. We utilize this learned mapping to obtain an explicit functional relationship between SoH degradation and cycle number. The proposed pipeline was validated using real-world data, yielding a closed-form analytical formula of SoH degradation with high accuracy.",
+   "url": "https://arxiv.org/abs/2604.00400v2",
+   "pdf_url": "https://arxiv.org/pdf/2604.00400v2"
+  },
+  {
+   "arxiv_id": "2304.13666",
+   "title": "Learning battery model parameter dynamics from data with recursive Gaussian process regression",
+   "authors": [
+    "Antti Aitio",
+    "Dominik Jöst",
+    "Dirk Uwe Sauer",
+    "David A. Howey"
+   ],
+   "published": "2023-04-26",
+   "updated": "2023-04-26",
+   "categories": [
+    "eess.SY",
+    "cs.LG"
+   ],
+   "abstract": "Estimating state of health is a critical function of a battery management system but remains challenging due to the variability of operating conditions and usage requirements of real applications. As a result, techniques based on fitting equivalent circuit models may exhibit inaccuracy at extremes of performance and over long-term ageing, or instability of parameter estimates. Pure data-driven techniques, on the other hand, suffer from lack of generality beyond their training dataset. In this paper, we propose a hybrid approach combining data- and model-driven techniques for battery health estimation. Specifically, we demonstrate a Bayesian data-driven method, Gaussian process regression, to estimate model parameters as functions of states, operating conditions, and lifetime. Computational efficiency is ensured through a recursive approach yielding a unified joint state-parameter estimator that learns parameter dynamics from data and is robust to gaps and varying operating conditions. Results show the efficacy of the method, on both simulated and measured data, including accurate estimates and forecasts of battery capacity and internal resistance. This opens up new opportunities to understand battery ageing in real applications.",
+   "url": "https://arxiv.org/abs/2304.13666v1",
+   "pdf_url": "https://arxiv.org/pdf/2304.13666v1"
+  },
+  {
+   "arxiv_id": "2401.05474",
+   "title": "Model-Driven Dataset Generation for Data-Driven Battery SOH Models",
+   "authors": [
+    "Khaled Sidahmed Sidahmed Alamin",
+    "Francesco Daghero",
+    "Giovanni Pollo",
+    "Daniele Jahier Pagliari",
+    "Yukai Chen",
+    "Enrico Macii",
+    "Massimo Poncino",
+    "Sara Vinco"
+   ],
+   "published": "2024-01-10",
+   "updated": "2024-01-10",
+   "categories": [
+    "eess.SP"
+   ],
+   "abstract": "Estimating the State of Health (SOH) of batteries is crucial for ensuring the reliable operation of battery systems. Since there is no practical way to instantaneously measure it at run time, a model is required for its estimation. Recently, several data-driven SOH models have been proposed, whose accuracy heavily relies on the quality of the datasets used for their training. Since these datasets are obtained from measurements, they are limited in the variety of the charge/discharge profiles. To address this scarcity issue, we propose generating datasets by simulating a traditional battery model (e.g., a circuit-equivalent one). The primary advantage of this approach is the ability to use a simulatable battery model to evaluate a potentially infinite number of workload profiles for training the data-driven model. Furthermore, this general concept can be applied using any simulatable battery model, providing a fine spectrum of accuracy/complexity tradeoffs. Our results indicate that using simulated data achieves reasonable accuracy in SOH estimation, with a 7.2% error relative to the simulated model, in exchange for a 27X memory reduction and a =2000X speedup.",
+   "url": "https://arxiv.org/abs/2401.05474v1",
+   "pdf_url": "https://arxiv.org/pdf/2401.05474v1"
+  },
+  {
+   "arxiv_id": "2103.16280",
+   "title": "A Dynamic Battery State-of-Health Forecasting Model for Electric Trucks: Li-Ion Batteries Case-Study",
+   "authors": [
+    "Matti Huotari",
+    "Shashank Arora",
+    "Avleen Malhi",
+    "Kary Främling"
+   ],
+   "published": "2021-03-30",
+   "updated": "2021-03-30",
+   "categories": [
+    "cs.LG"
+   ],
+   "abstract": "It is of extreme importance to monitor and manage the battery health to enhance the performance and decrease the maintenance cost of operating electric vehicles. This paper concerns the machine-learning-enabled state-of-health (SoH) prognosis for Li-ion batteries in electric trucks, where they are used as energy sources. The paper proposes methods to calculate SoH and cycle life for the battery packs. We propose autoregressive integrated modeling average (ARIMA) and supervised learning (bagging with decision tree as the base estimator; BAG) for forecasting the battery SoH in order to maximize the battery availability for forklift operations. As the use of data-driven methods for battery prognostics is increasing, we demonstrate the capabilities of ARIMA and under circumstances when there is little prior information available about the batteries. For this work, we had a unique data set of 31 lithium-ion battery packs from forklifts in commercial operations. On the one hand, results indicate that the developed ARIMA model provided relevant tools to analyze the data from several batteries. On the other hand, BAG model results suggest that the developed supervised learning model using decision trees as base estimator yields better forecast accuracy in the presence of large variation in data for one battery.",
+   "url": "https://arxiv.org/abs/2103.16280v1",
+   "pdf_url": "https://arxiv.org/pdf/2103.16280v1"
+  },
+  {
+   "arxiv_id": "2501.11542",
+   "title": "State-of-Health Prediction for EV Lithium-Ion Batteries via DLinear and Robust Explainable Feature Selection",
+   "authors": [
+    "Minsu Kim",
+    "Jaehyun Oh",
+    "Sang-Young Lee",
+    "Junghwan Kim"
+   ],
+   "published": "2025-01-20",
+   "updated": "2025-09-16",
+   "categories": [
+    "eess.SY",
+    "cs.LG"
+   ],
+   "abstract": "Accurate prediction of the state-of-health (SOH) of lithium-ion batteries is essential for ensuring the safety, reliability, and efficient operation of electric vehicles (EVs). Battery packs in EVs experience nonuniform degradation due to cell-to-cell variability (CtCV), posing a major challenge for real-time battery management. In this work, we propose an explainable, data-driven SOH prediction framework tailored for EV battery management systems (BMS). The approach combines robust feature engineering with a DLinear. Using NASA's battery aging dataset, we extract twenty meaningful features from voltage, current, temperature, and time profiles, and select key features using Pearson correlation and Shapley additive explanations (SHAP). The SHAP-based selection yields consistent feature importance across multiple cells, effectively capturing CtCV. The DLinear algorithm outperforms long short-term memory (LSTM) and Transformer architectures in prediction accuracy, while requiring fewer training cycles and lower computational cost. This work offers a scalable and interpretable framework for SOH forecasting, enabling practical implementation in EV BMS and promoting safer, more efficient electric mobility.",
+   "url": "https://arxiv.org/abs/2501.11542v2",
+   "pdf_url": "https://arxiv.org/pdf/2501.11542v2"
+  },
+  {
+   "arxiv_id": "2206.08080",
+   "title": "A Machine Learning-based Digital Twin for Electric Vehicle Battery Modeling",
+   "authors": [
+    "Khaled Sidahmed Sidahmed Alamin",
+    "Yukai Chen",
+    "Enrico Macii",
+    "Massimo Poncino",
+    "Sara Vinco"
+   ],
+   "published": "2022-06-16",
+   "updated": "2022-06-16",
+   "categories": [
+    "cs.LG",
+    "cs.AI",
+    "eess.SY",
+    "math.NA"
+   ],
+   "abstract": "The widespread adoption of Electric Vehicles (EVs) is limited by their reliance on batteries with presently low energy and power densities compared to liquid fuels and are subject to aging and performance deterioration over time. For this reason, monitoring the battery State Of Charge (SOC) and State Of Health (SOH) during the EV lifetime is a very relevant problem. This work proposes a battery digital twin structure designed to accurately reflect battery dynamics at the run time. To ensure a high degree of correctness concerning non-linear phenomena, the digital twin relies on data-driven models trained on traces of battery evolution over time: a SOH model, repeatedly executed to estimate the degradation of maximum battery capacity, and a SOC model, retrained periodically to reflect the impact of aging. The proposed digital twin structure will be exemplified on a public dataset to motivate its adoption and prove its effectiveness, with high accuracy and inference and retraining times compatible with onboard execution.",
+   "url": "https://arxiv.org/abs/2206.08080v1",
+   "pdf_url": "https://arxiv.org/pdf/2206.08080v1"
+  },
+  {
+   "arxiv_id": "2507.18320",
+   "title": "State of Health Estimation of Batteries Using a Time-Informed Dynamic Sequence-Inverted Transformer",
+   "authors": [
+    "Janak M. Patel",
+    "Milad Ramezankhani",
+    "Anirudh Deodhar",
+    "Dagnachew Birru"
+   ],
+   "published": "2025-07-24",
+   "updated": "2025-11-17",
+   "categories": [
+    "cs.LG"
+   ],
+   "abstract": "The rapid adoption of battery-powered vehicles and energy storage systems over the past decade has made battery health monitoring increasingly critical. Batteries play a central role in the efficiency and safety of these systems, yet they inevitably degrade over time due to repeated charge-discharge cycles. This degradation leads to reduced energy efficiency and potential overheating, posing significant safety concerns. Accurate estimation of a State of Health (SoH) of battery is therefore essential for ensuring operational reliability and safety. Several machine learning architectures, such as LSTMs, transformers, and encoder-based models, have been proposed to estimate SoH from discharge cycle data. However, these models struggle with the irregularities inherent in real-world measurements: discharge readings are often recorded at non-uniform intervals, and the lengths of discharge cycles vary significantly. To address this, most existing approaches extract features from the sequences rather than processing them in full, which introduces information loss and compromises accuracy. To overcome these challenges, we propose a novel architecture: Time-Informed Dynamic Sequence Inverted Transformer (TIDSIT). TIDSIT incorporates continuous time embeddings to effectively represent irregularly sampled data and utilizes padded sequences with temporal attention mechanisms to manage variable-length inputs without discarding sequence information. Experimental results on the NASA battery degradation dataset show that TIDSIT significantly outperforms existing models, achieving over 50% reduction in prediction error and maintaining an SoH prediction error below 0.58%. Furthermore, the architecture is generalizable and holds promise for broader applications in health monitoring tasks involving irregular time-series data.",
+   "url": "https://arxiv.org/abs/2507.18320v2",
+   "pdf_url": "https://arxiv.org/pdf/2507.18320v2"
+  },
+  {
+   "arxiv_id": "2309.14125",
+   "title": "Driving behavior-guided battery health monitoring for electric vehicles using machine learning",
+   "authors": [
+    "Nanhua Jiang",
+    "Jiawei Zhang",
+    "Weiran Jiang",
+    "Yao Ren",
+    "Jing Lin",
+    "Edwin Khoo",
+    "Ziyou Song"
+   ],
+   "published": "2023-09-25",
+   "updated": "2023-09-25",
+   "categories": [
+    "eess.SY",
+    "cs.LG"
+   ],
+   "abstract": "An accurate estimation of the state of health (SOH) of batteries is critical to ensuring the safe and reliable operation of electric vehicles (EVs). Feature-based machine learning methods have exhibited enormous potential for rapidly and precisely monitoring battery health status. However, simultaneously using various health indicators (HIs) may weaken estimation performance due to feature redundancy. Furthermore, ignoring real-world driving behaviors can lead to inaccurate estimation results as some features are rarely accessible in practical scenarios. To address these issues, we proposed a feature-based machine learning pipeline for reliable battery health monitoring, enabled by evaluating the acquisition probability of features under real-world driving conditions. We first summarized and analyzed various individual HIs with mechanism-related interpretations, which provide insightful guidance on how these features relate to battery degradation modes. Moreover, all features were carefully evaluated and screened based on estimation accuracy and correlation analysis on three public battery degradation datasets. Finally, the scenario-based feature fusion and acquisition probability-based practicality evaluation method construct a useful tool for feature extraction with consideration of driving behaviors. This work highlights the importance of balancing the performance and practicality of HIs during the development of feature-based battery health monitoring algorithms.",
+   "url": "https://arxiv.org/abs/2309.14125v1",
+   "pdf_url": "https://arxiv.org/pdf/2309.14125v1"
+  },
+  {
+   "arxiv_id": "1909.08062",
+   "title": "Simultaneous Identification and Control Using Active Signal Injection for Series Hybrid Electric Vehicles based on Dynamic Programming",
+   "authors": [
+    "Haojie Zhu",
+    "Ziyou Song",
+    "Jun Hou",
+    "Heath Hofmann",
+    "Jing Sun"
+   ],
+   "published": "2019-09-17",
+   "updated": "2019-09-17",
+   "categories": [
+    "eess.SY",
+    "nlin.AO"
+   ],
+   "abstract": "Hybrid electric vehicles (HEVs) have an over-actuated system by including two power sources, a battery pack and an internal combustion engine. This feature of HEV is exploited in this paper to simultaneously achieve accurate identification of battery parameters/states. By actively injecting current signals, state of charge, state of health, and other battery parameters can be estimated in a specific sequence to improve the identification performance when compared to the case where all parameters and states are estimated concurrently using the baseline current signals. A dynamic programming strategy is developed to provide the benchmark results about how to balance the conflicting objectives corresponding to identification and system efficiency. The tradeoff between different objectives is presented to optimize the current profile so that the richness of signal can be ensured and the fuel economy can be optimized. In addition, simulation results show that the Root-Mean-Square error of the estimation can be decreased by up to 100% at a cost of less than 2% increase in fuel consumption. With the proposed simultaneous identification and control algorithm, the parameters/states of the battery can be monitored to ensure safe and efficient application of the battery for HEVs.",
+   "url": "https://arxiv.org/abs/1909.08062v1",
+   "pdf_url": "https://arxiv.org/pdf/1909.08062v1"
+  },
+  {
+   "arxiv_id": "2411.13197",
+   "title": "Gas-induced bulging in pouch-cell batteries: a mechanical model",
+   "authors": [
+    "Andrea Giudici",
+    "Colin Please",
+    "Jon Chapman"
+   ],
+   "published": "2024-11-20",
+   "updated": "2024-11-20",
+   "categories": [
+    "cond-mat.soft"
+   ],
+   "abstract": "Over the long timescale of many charge/discharge cycles, gas formation can result in large bulging deformations of a Lithium-ion pouch cell, which is a key failure mechanism in batteries. Guided by recent experimental X-ray tomography data of a bulging cell, we propose a homogenised mechanical model to predict the shape of the deformation and the stress distribution analytically. Our model can be included in battery simulation models to capture the effects of mechanical degradation. Furthermore, with knowledge of the bending stiffness of the cathode electrodes and current collectors, and by fitting our model to experimental data, we can predict the internal pressure and the amount of gas in the battery, thus assisting in monitoring the state of health (SOH) of the cell without breaking the sealed case.",
+   "url": "https://arxiv.org/abs/2411.13197v1",
+   "pdf_url": "https://arxiv.org/pdf/2411.13197v1"
+  }
+ ]
+}
